@@ -19,6 +19,33 @@
     width: 100vw;
 }
 
+
+.menyknapp {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: -2px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+button span {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    display: block;
+    background-color: black;
+    position: relative;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover span:nth-child(2) {
+    right: 4px;
+}
+
 .sida1 {
     border: 4px solid black;
     width: 167px;
