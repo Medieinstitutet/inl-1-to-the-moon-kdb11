@@ -58,8 +58,12 @@ button span {
     transition: all 0.3s ease-in-out;
 }
 
-button:hover span:nth-child(2) {
+button span:nth-child(2) {
     right: 4px;
+}
+
+button:hover span:nth-child(2) {
+    right: 0px;
 }
 
 /* --------------------------------------------------------------------- */
@@ -103,6 +107,81 @@ button:hover span:nth-child(2) {
 /* --------------------------SIDA 2------------------------------------- */
 /* --------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- */
+
+.space {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-left: 17px;
+    padding-top: 50px;
+    letter-spacing: 4px;
+}
+
+.vent {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #C4C5C6;
+    position: relative;
+    padding-left: 70px;
+    padding-top: 65px;
+}
+
+.rubrik1 {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 3px;
+    letter-spacing: 0.2px;
+    padding-top: 37px;
+}
+
+.text1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 17px;
+    color: white;
+}
+.citat {
+    font-family: 'Rubik', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 17px;
+    padding-left: 40px;
+    color: white;
+}
+.text2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 17px;
+    color: white;
+ }
+.text3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 17px;
+    color: white;
+ }
+    .text4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 17px;
+    color: white;
+}
+    
+    .readme {
+        color: #BA045B;
+    }
+    a:visited {
+        color: #BA045B;
+    }
 
 .cookies {
     background-color: purple;
