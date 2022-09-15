@@ -128,7 +128,7 @@ button:hover span:nth-child(2) {
     font-family: 'Times New Roman', Times, serif;
     font-size: 5rem;
     font-weight: bold;
-    color: #C4C5C6;
+    color: #c4c5c6e8;
     position: relative;
     padding-left: 70px;
     padding-top: 65px;
@@ -157,11 +157,11 @@ button:hover span:nth-child(2) {
 }
 
 .readme {
-    color: #BA045B;
+    color: #D200A2;
 }
 
 a:visited {
-    color: #BA045B;
+    color: #D200A2;
 }
 
 .cookies {
