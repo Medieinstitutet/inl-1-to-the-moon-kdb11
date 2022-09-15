@@ -108,9 +108,13 @@ button:hover span:nth-child(2) {
 /* --------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- */
 
-.space {
-    font-family: 'Rubik', sans-serif;
+.space, .rubrik1, .text1, .citat, .text2, .text3, .text4 {
     color: white;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+}
+
+.space {
     position: absolute;
     z-index: 1;
     font-size: 3.5rem;
@@ -131,57 +135,34 @@ button:hover span:nth-child(2) {
 }
 
 .rubrik1 {
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    padding-left: 3px;
+    padding-left: 0.5em;
     letter-spacing: 0.2px;
     padding-top: 37px;
 }
 
-.text1 {
-    font-family: 'Rubik', sans-serif;
+.text1, .text2, .text3, .text4 {
     font-size: 12px;
     font-weight: 300;
-    padding-top: 17px;
-    color: white;
+    padding-top: 1em;
+    padding-left: 1em;
+    line-height: 1.5;
 }
+
 .citat {
-    font-family: 'Rubik', sans-serif;
     font-size: 19px;
     font-weight: 300;
     font-style: italic;
     padding-top: 17px;
-    padding-left: 40px;
-    color: white;
+    padding-left: 30px;
 }
-.text2 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    padding-top: 17px;
-    color: white;
- }
-.text3 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    padding-top: 17px;
-    color: white;
- }
-    .text4 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    padding-top: 17px;
-    color: white;
+
+.readme {
+    color: #BA045B;
 }
-    
-    .readme {
-        color: #BA045B;
-    }
-    a:visited {
-        color: #BA045B;
-    }
+
+a:visited {
+    color: #BA045B;
+}
 
 .cookies {
     background-color: purple;
@@ -192,4 +173,46 @@ button:hover span:nth-child(2) {
 .accept_button {
     position: absolute;
     right: 0px;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------DESKTOP------------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+@media screen and (min-width: 800px){
+    
+    .menyknapp {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-right: -1rem;
+    }
+    
+    button span {
+        width: 5rem;
+        height: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-radius: 0.75rem;
+    }
+
+    button span:nth-child(2) {
+        right: 0.9rem;
+    }
+    
+
+
+    .sida1 {
+        width: 35rem;
+        height: 35rem;
+        margin-left: 2.5rem;
+    }
+    .read {
+        padding-left: 25rem;
+    }
+
+    .read:hover .arrow {
+        position:relative;
+        left: 20px;
+    }
 }
