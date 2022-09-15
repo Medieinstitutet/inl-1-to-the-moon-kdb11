@@ -200,19 +200,40 @@ a:visited {
         right: 0.9rem;
     }
     
-
-
     .sida1 {
         width: 35rem;
         height: 35rem;
         margin-left: 2.5rem;
     }
+
+    .heading-text {
+        font-size: 7rem;
+        text-align: center;
+        width: 35rem;
+        height: 35rem;
+        padding-top: 7rem;
+        line-height: 1.3;
+    }
+
+    br {
+        display: none;
+    }
+
     .read {
-        padding-left: 25rem;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;
+        padding-left: 20rem;
+    }
+
+    .arrow {
+        position: relative;
+        left: 0;
+        transition: left 0.5s cubic-bezier(0.65, 0, 0.35, 1);
     }
 
     .read:hover .arrow {
         position:relative;
         left: 20px;
+
     }
 }
