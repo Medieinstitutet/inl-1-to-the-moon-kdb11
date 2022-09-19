@@ -294,24 +294,43 @@ a:visited {
         padding-right: 5%;
         font-weight: 300;
         position: absolute;
-        left: 65rem;
-        top: 65rem;
-        }
+        left: 55%;
+        top: 115%;
+    }
 
-        .text2, .text3, .text4, .readmore {
-            position: relative;
-            bottom: 25rem;
-            left: 55%;
+    .text2, .text3, .text4, .readmore {
+        position: relative;
+        bottom: 25rem;
+        left: 55%;
+    }
 
-        }
+    .astronaut {
+        width: 150px;
+        height: 225px;
+        position: absolute;
+        left: 75%;
+        top: 120%;
+        float: left;
+    }
+
+    .text2, .text3 {
+        text-align: justify;
+    }
 
     .flexbox-container {
         height: 50vh;
         width: 100%;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         
     }
+
+    .astronaut1 {
+        position: absolute; 
+        top: 150%;
+        left: 75%;
+    }
+
 }
 
     /* --------------------------------------------------------------------- */
