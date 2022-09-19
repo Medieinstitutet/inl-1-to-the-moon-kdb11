@@ -119,7 +119,7 @@ button:hover span:nth-child(2) {
     z-index: 1;
     font-size: 3.5rem;
     font-weight: bold;
-    padding-left: 17px;
+    padding-left: 5%;
     padding-top: 50px;
     letter-spacing: 4px;
 }
@@ -156,7 +156,7 @@ button:hover span:nth-child(2) {
     padding-left: 30px;
 }
 
-.readme {
+.readmore {
     color: #D200A2;
 }
 
@@ -236,4 +236,52 @@ button span:nth-child(2) {
     left: 20px;
 
 }
+
+.space {
+    font-size: 8.5rem;
 }
+
+.vent {
+    font-size: 11rem;
+    padding-left: 6%;
+    padding-top: 6%;
+}
+
+.header2, .text1, .quote, .text2, .text3, .text4, .readmore {
+    padding-left: 5%;
+    width: 40%;
+    letter-spacing: 1px;
+}
+
+.header2 {
+    font-size: 2.5rem;
+}
+
+.text1, .text2, .text3, .text4, .readmore {
+    font-size: 1.14rem;
+    line-height: 1.7;
+}
+
+.quote {
+    font-size: 1.9rem;
+    padding-top: 3%;
+    padding-left: 9%;
+    line-height: 1.3;
+}
+
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+}
+
+/* @media screen and (max-width: 800px) {
+    .break3 {
+        display: none;
+    }
+} */
+
