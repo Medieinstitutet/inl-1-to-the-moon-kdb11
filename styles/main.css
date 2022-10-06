@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red;  */
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* ------------------------------BACKGROUNDPICS------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+.backgroundpic { 
+    background-image: url(../assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.backgroundpic2 { 
+    background-image: url(../assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* -------------------------------MENY---------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+input {
+    z-index: 3;
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input:checked + .input--menu button span {
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+input:checked + .input--menu button span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + .input--menu button span:nth-child(1) {
+    transform: rotate(45deg);
+    left: 10%;
+    top: 40%;
+}
+
+input:checked + .input--menu button span:nth-child(3) {
+    transform: rotate(-45deg);
+    left: 10%;
+    top: 40%;
+}
+
+.menuBtn {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events:none;
+}
+
+button span {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    display: block;
+    background-color: black;
+    position: relative;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu--scroll {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+button span:nth-child(2) {
+    right: 4px;
+}
+
+button:hover span:nth-child(2) {
+    right: 0px;
+}
+
+input:hover + .input--menu button span:nth-child(2) {
+    right: 4px;
+}
+
+.menu--open {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    top: 0;
+    left: 0;
+}
+
+.menu--open__container{
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.menu--open__text {
+    text-shadow: 3px 3px gray;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input:checked + .input--menu .menu--open {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------PAGE 1------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+.page1 {
+    border: 4px solid black;
+    width: 167px;
+    height: 184px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 49px;
+    top: 76px;
+}
+
+.read {
+    font-size: 1rem;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    }
+
+.heading-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    position: absolute;
+    width: 167px;
+    height: 187px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.arrow2 {
+    position: absolute;
+    color: white;
+    font-size: 3.5rem;
+    bottom: 0;
+    left: 50%;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------PAGE 2------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+.space, .header2, .text1, .quote, .text2, .text3, .text4 {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+}
+
+.space {
+    position: absolute;
+    z-index: 1;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 50px;
+    letter-spacing: 4px;
+}
+
+.vent {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #c4c5c6e8;
+    position: relative;
+    padding-left: 70px;
+    padding-top: 65px;
+}
+
+.header2 {
+    padding-left: 0.5em;
+    letter-spacing: 0.2px;
+    padding-top: 37px;
+}
+
+.text1, .text2, .text3, .text4 {
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 1em;
+    padding-left: 1em;
+    line-height: 1.5;
+}
+
+.quote {
+    font-size: 19px;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 17px;
+    padding-left: 30px;
+}
+
+.readmore {
+    color: #D200A2;
+}
+
+a:visited {
+    color: #D200A2;
+}
+
+.cookies {
+    display: flex;
+    flex-direction: column;
+    background-color: #02061F;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.cookie--text {
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 30%;
+    color: #D200A2;
+    text-shadow: 0 0 10px #e60073;
+    padding-left: 20px;
+    width: 70%;
+}
+
+.accept_button {
+    position: absolute;
+    background-color: #081160;
+    right: 20px;
+    top: 25%;
+    height: 60%;
+    width: 100px;
+}
+
+.button--text {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+.button--text:visited {
+    color: white;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------DESKTOPMENU-------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+@media screen and (min-width: 800px){
+    
+    input, .menuBtn {
+        width: 7.5rem;
+        height: 7.5rem;
+        padding-left: 1rem;
+    }
+        
+    button span {
+        width: 5rem;
+        height: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-radius: 0.75rem;
+    }
+
+    button span:nth-child(2) {
+        right: 0.9rem;
+    }
+
+    .menu--open__text:hover {
+        text-decoration: underline #D200A2 7px;
+    }
+
+    /* --------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------- */
+    /* --------------------------DESKTOPPAGE1------------------------------- */
+    /* --------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------- */
+
+    .page1 {
+        width: 35rem;
+        height: 35rem;
+        margin-left: 2.5rem;
+    }
+
+    .heading-text {
+        font-size: 7rem;
+        text-align: center;
+        width: 35rem;
+        height: 35rem;
+        padding-top: 7rem;
+        line-height: 1.3;
+    }
+
+    .break1, .break2 {
+        display: none;
+    }
+
+    .read {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;
+        padding-left: 20rem;
+        cursor: pointer;
+    }
+
+    .arrow {
+        position: relative;
+        left: 0;
+        transition: left 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    .read:hover .arrow {
+        position:relative;
+        left: 20px;
+
+    }
+
+    /* --------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------- */
+    /* --------------------------DESKTOPPAGE2------------------------------- */
+    /* --------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------- */
+
+    .space {
+        font-size: 8.5rem;
+    }
+
+    .vent {
+        font-size: 11rem;
+        padding-left: 6%;
+        padding-top: 6%;
+    }
+
+    .header2, .text1, .quote, .text2, .text3, .text4, .readmore {
+        padding-left: 5%;
+        width: 40%;
+        letter-spacing: 1px;
+    }
+
+    .header2 {
+        font-size: 2.5rem;
+    }
+
+    .text1 {
+        font-size: 0.95vw;
+        line-height: 1.7;
+    }
+
+    .quote {
+        font-size: 1.6vw;
+        padding-top: 3%;
+        padding-left: 9%;
+        line-height: 1.3;
+    }
+
+    .quote2 {
+        font-family: 'Rubik', sans-serif;
+        color: #c4c5c657;
+        background-image: linear-gradient(to bottom,#C71585, #db7093, #FFC0CB, #FFE4E1 ,#FFC0CB, #db7093, #C71585);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.4;
+        font-size: 2.6vw;
+        width: 35%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+        font-weight: 300;
+        position: absolute;
+        left: 55%;
+        top: 115%;
+    }
+
+    .text2, .text3, .text4, .readmore {
+        position: relative;
+        bottom: 25rem;
+        left: 55%;
+        overflow-wrap: break-word;
+        overflow: hidden;
+        font-size: 0.905vw;
+        line-height: 1.7;
+    }
+
+    .text3, .text4 { 
+        padding-top: 10px;
+    }
+
+    .astronaut1 {
+        transform: rotate(5deg);
+        float: right;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .mainpage2, .flexbox-container {
+        height: 500px;
+    }
+
+    .arrow2, .arrow3 {
+        display: none;
+    }
+    
+}
+
+    /* --------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------- */
+    /* --------------------------EXTRAS------------------------------------- */
+    /* --------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+    
+    .quote2, .astronaut1{
+        display: none;
+    }
+
+    .cookie--text {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+    
+    /* .break3 {
+        display: none;
+    } */
+}
+
