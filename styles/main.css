@@ -135,6 +135,7 @@ input:hover + .input--menu button span:nth-child(2) {
 .menu--open__text {
     text-shadow: 3px 3px gray;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 input:checked + .input--menu .menu--open {
